@@ -4,6 +4,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+*:focus {
+  outline:none
+}
+
+
 body {
   margin: 2em;
   /*  change background color  */
@@ -30,6 +35,7 @@ button {
   padding: 10px;
   border-radius: 10px;
   margin: auto 0;
+  border: 2.5px solid;
 }
 
 /* Change game button size */
@@ -37,7 +43,10 @@ button {
   width: 300px;
   height: 300px;
   margin: 0 auto;;
+  border-radius: 2em;
 }
+
+
 
 /* Move buttons down 20px and center*/
 #gameButtonArea {
@@ -51,6 +60,11 @@ button {
   justify-content: center;
 }
 
+/* Add Padding to Game Control Button  */
+#gameCtrl, #startBtn, #stopBtn {
+  padding:13px;
+}
+
 /* Color the Buttons */
 #button1:active {
   background:lightgreen;
@@ -58,6 +72,11 @@ button {
 
 #button1:active, #button1.lit {
   background:green;
+}
+
+#button1:hover {
+  transform: translateY(-0.25em);
+  cursor: pointer;
 }
 
 #button2:active {
@@ -68,6 +87,12 @@ button {
   background:blue;
 }
 
+#button2:hover {
+  transform: translateY(-0.25em);
+  cursor: pointer;
+
+}
+
 #button3:active {
   background:lightred;
 }
@@ -76,11 +101,22 @@ button {
   background:red;
 }
 
+#button3:hover {
+  transform: translateY(-0.25em);
+  cursor: pointer;
+
+}
+
 #button4:active {
   background:lightyellow;
 }
 
 #button4:active, #button1.lit {
   background:yellow;
+}
+
+#button4:hover {
+  transform: translateY(-0.25em);
+  cursor: pointer;
 }
 
