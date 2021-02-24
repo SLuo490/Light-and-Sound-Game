@@ -1,3 +1,8 @@
+// global constants
+const clueHoldTime = 1000; //how long to hold each clue's light/sound
+const cluePauseTime = 333; //how long to pause in between clues
+const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
+
 //Global Variables
 //keep track of the secret pattern of button pressed
 var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
@@ -7,6 +12,7 @@ var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;  //must be between 0.0 and 1.0
+
 
 /*
     Start Game
@@ -19,6 +25,8 @@ function startGame() {
     // swap the Start and Stop buttons when game start
     document.getElementById("startBtn").classList.add("hidden");
     document.getElementById("stopBtn").classList.remove("hidden");
+
+    playClueSequence();
 }
 
 /*
@@ -96,4 +104,27 @@ function lightButton(btn) {
  */
 function clearButton(btn) {
     document.getElementById("button" + btn).classList.remove("lit")
+}
+
+/**
+ * 
+ * @param {number} btn - play tone for a certain amount of time for each button
+ */
+function playSingleClue(btn) {
+    if (gamePlaying) {
+        lightButton(btn);
+        playTone(btn, clueHoldTime);
+        setTimeout(clearButton, clueHoldTime, btn);
+    }
+}
+
+//play the next sound
+function playClueSequence() {
+    let delay = nextClueWaitTime; //set delay to initial wait time
+    for (let i = 0; i <= progress; i++) { // for each clue that is revealed so far
+        console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
+        setTimeout(playSingleClue, delay, pattern[i]) // set a timeout to play that clue
+        delay += clueHoldTime
+        delay += cluePauseTime;
+    }
 }
