@@ -34,34 +34,53 @@ button {
 
 /* Change game button size */
 #gameButtonArea > button {
-  width: 200px;
-  height: 200px;
-  margin: 2px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;;
 }
 
 /* Move buttons down 20px and center*/
 #gameButtonArea {
   padding-top: 20px;
   display:flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-#startBtn {
-  
+#gameCtrl {
+  display:flex;
+  justify-content: center;
 }
 
 /* Color the Buttons */
 #button1:active {
+  background:lightgreen;
+}
+
+#button1:active, #button1.lit {
   background:green;
 }
+
 #button2:active {
+  background:lightblue;
+}
+
+#button2:active, #button1.lit {
   background:blue;
 }
+
 #button3:active {
+  background:lightred;
+}
+
+#button3:active, #button1.lit {
   background:red;
 }
+
 #button4:active {
+  background:lightyellow;
+}
+
+#button4:active, #button1.lit {
   background:yellow;
 }
 
