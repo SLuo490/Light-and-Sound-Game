@@ -19,11 +19,14 @@ body {
 /* Align Text to center of screen */
 h1 {
   text-align: center;
+  font-size: 40px;
 }
 
 /* Align Text to center of screen  */
 p {
     text-align: center;
+    font-size: 20px;
+
 }
 
 /*Hides the stop button */
@@ -36,6 +39,7 @@ button {
   border-radius: 10px;
   margin: auto 0;
   border: 2.5px solid;
+  cursor: pointer;
 }
 
 /* Change game button size */
@@ -45,8 +49,6 @@ button {
   margin: 0 auto;;
   border-radius: 2em;
 }
-
-
 
 /* Move buttons down 20px and center*/
 #gameButtonArea {
@@ -58,6 +60,11 @@ button {
 #gameCtrl {
   display:flex;
   justify-content: center;
+}
+
+#gameCtrl:hover {
+  transform: translateY(-0.25em);
+
 }
 
 /* Add Padding to Game Control Button  */
@@ -76,7 +83,8 @@ button {
 
 #button1:hover {
   transform: translateY(-0.25em);
-  cursor: pointer;
+  box-shadow: 0 0.5em 0.5em -0.4em black;
+
 }
 
 #button2:active {
@@ -89,7 +97,7 @@ button {
 
 #button2:hover {
   transform: translateY(-0.25em);
-  cursor: pointer;
+  box-shadow: 0 0.5em 0.5em -0.4em black;
 
 }
 
@@ -103,7 +111,8 @@ button {
 
 #button3:hover {
   transform: translateY(-0.25em);
-  cursor: pointer;
+  box-shadow: 0 0.5em 0.5em -0.4em black;
+
 
 }
 
@@ -117,6 +126,7 @@ button {
 
 #button4:hover {
   transform: translateY(-0.25em);
-  cursor: pointer;
+  box-shadow: 0 0.5em 0.5em -0.4em black;
+
 }
 
