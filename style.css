@@ -1,18 +1,17 @@
 /* CSS files add styling rules to your content */
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 *:focus {
-  outline:none
+  outline: none;
 }
-
 
 body {
   margin: 2em;
   /*  change background color  */
-  background-color:antiquewhite;
+  background-color: antiquewhite;
   color: black;
 }
 
@@ -24,9 +23,8 @@ h1 {
 
 /* Align Text to center of screen  */
 p {
-    text-align: center;
-    font-size: 20px;
-
+  text-align: center;
+  font-size: 20px;
 }
 
 /*Hides the stop button */
@@ -46,87 +44,86 @@ button {
 #gameButtonArea > button {
   width: 300px;
   height: 300px;
-  margin: 0 auto;;
+  margin: 0 auto;
   border-radius: 2em;
 }
 
 /* Move buttons down 20px and center*/
 #gameButtonArea {
   padding-top: 20px;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
 #gameCtrl {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
 #gameCtrl:hover {
   transform: translateY(-0.25em);
-
 }
 
 /* Add Padding to Game Control Button  */
-#gameCtrl, #startBtn, #stopBtn {
-  padding:13px;
+#gameCtrl,
+#startBtn,
+#stopBtn {
+  padding: 13px;
 }
 
 /* Color the Buttons */
 #button1 {
-  background:lightgreen;
+  background: lightgreen;
 }
 
-#button1:active, #button1.lit {
-  background:green;
+#button1:active,
+#button1.lit {
+  background: green;
 }
 
 #button1:hover {
   transform: translateY(-0.25em);
   box-shadow: 0 0.5em 0.5em -0.4em black;
-
 }
 
 #button2 {
-  background:lightblue;
+  background: lightblue;
 }
 
-#button2:active, #button1.lit {
-  background:blue;
+#button2:active,
+#button2.lit {
+  background: blue;
 }
 
 #button2:hover {
   transform: translateY(-0.25em);
   box-shadow: 0 0.5em 0.5em -0.4em black;
-
 }
 
 #button3 {
-  background:lightred;
+  background: lightred;
 }
 
-#button3:active, #button1.lit {
-  background:red;
+#button3:active,
+#button3.lit {
+  background: red;
 }
 
 #button3:hover {
   transform: translateY(-0.25em);
   box-shadow: 0 0.5em 0.5em -0.4em black;
-
-
 }
 
 #button4 {
-  background:lightyellow;
+  background: lightyellow;
 }
 
-#button4:active, #button1.lit {
-  background:yellow;
+#button4:active,
+#button4.lit {
+  background: yellow;
 }
 
 #button4:hover {
   transform: translateY(-0.25em);
   box-shadow: 0 0.5em 0.5em -0.4em black;
-
 }
-
