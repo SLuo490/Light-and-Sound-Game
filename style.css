@@ -1,0 +1,67 @@
+/* CSS files add styling rules to your content */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 2em;
+  /*  change background color  */
+  background-color:antiquewhite;
+  color: black;
+}
+
+/* Align Text to center of screen */
+h1 {
+  text-align: center;
+}
+
+/* Align Text to center of screen  */
+p {
+    text-align: center;
+}
+
+/*Hides the stop button */
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto 0;
+}
+
+/* Change game button size */
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+}
+
+/* Move buttons down 20px and center*/
+#gameButtonArea {
+  padding-top: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#startBtn {
+  
+}
+
+/* Color the Buttons */
+#button1:active {
+  background:green;
+}
+#button2:active {
+  background:blue;
+}
+#button3:active {
+  background:red;
+}
+#button4:active {
+  background:yellow;
+}
+
