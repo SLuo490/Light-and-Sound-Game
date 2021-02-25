@@ -1,7 +1,11 @@
 SITE Pre-Work Submission
 Name: Shi Tao Luo
 
-1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. YOUR ANSWER HERE]
+1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
+
+ - Stackoverflow
+ - https://css-tricks.com/snippets/css/a-guide-to-flexbox/, 
+ - Colt Steele (udemy)
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) [YOUR ANSWER HERE]
 
