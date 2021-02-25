@@ -6,6 +6,7 @@ Name: Shi Tao Luo
  - Stackoverflow
  - https://css-tricks.com/snippets/css/a-guide-to-flexbox/, 
  - Colt Steele (udemy)
+ - https://developer.mozilla.org/en-US/
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) [YOUR ANSWER HERE]
 
