@@ -62,7 +62,11 @@ button {
   justify-content: center;
 }
 
-#gameCtrl:hover {
+#startBtn:hover {
+  transform: translateY(-0.25em);
+}
+
+#stopBtn:hover {
   transform: translateY(-0.25em);
 }
 
@@ -165,7 +169,7 @@ button {
 
 #button7:active,
 #button7.lit {
-  background: pink;
+  background: #D782BA;
 }
 
 #button7:hover {

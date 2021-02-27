@@ -4,7 +4,7 @@ const nextClueWaitTime = 1000; //how long to wait before starting playback of th
 
 //Global Variables
 //keep track of the secret pattern of button pressed
-var pattern = [2, 2, 4, 3, 6, 8, 5];
+var pattern = [5, 3, 2, 1, 1, 7, 8];
 //how long to hold each clue's light/sound
 var clueHoldTime = 1000;
 
@@ -43,6 +43,8 @@ function stopGame() {
     // swap the Start and Stop buttons when game stop
     document.getElementById("startBtn").classList.remove("hidden");
     document.getElementById("stopBtn").classList.add("hidden");
+    clueHoldTime = 1000;
+
 }
 
 // Sound Synthesis Functions
@@ -135,9 +137,10 @@ function playClueSequence() {
         // for each clue that is revealed so far
         console.log("play single clue: " + pattern[i] + " in " + delay + "ms");
         setTimeout(playSingleClue, delay, pattern[i]); // set a timeout to play that clue
-        delay += clueHoldTime; //decrease clueholdtime each turn
+        delay += clueHoldTime;
         delay += cluePauseTime;
-        clueHoldTime -= 25;
+        //decrement clueholdtime after each turn
+        clueHoldTime -= 20;
     }
 }
 
@@ -177,18 +180,10 @@ function guess(btn) {
 
 function randomPattern(array) {
     var currentIndex = array.length;
-    var temp;
-    var randomIndex;
 
     // While there remain elements to randomize
     for (var i = 0; i < currentIndex; i++) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        // And swap it with the current element.
-        temp = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temp;
+        array[i] = Math.floor(Math.random() * currentIndex) + 1;
     }
 
     return array;
