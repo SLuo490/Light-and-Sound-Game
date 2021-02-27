@@ -44,7 +44,7 @@ button {
 #gameButtonArea > button {
   width: 300px;
   height: 300px;
-  margin: 0 auto;
+  margin: 10px;
   border-radius: 2em;
 }
 
@@ -53,7 +53,9 @@ button {
   padding-top: 20px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
+
 
 #gameCtrl {
   display: flex;
@@ -101,7 +103,7 @@ button {
 }
 
 #button3 {
-  background: lightred;
+  background: lightcoral;
 }
 
 #button3:active,
@@ -124,6 +126,63 @@ button {
 }
 
 #button4:hover {
+  transform: translateY(-0.25em);
+  box-shadow: 0 0.5em 0.5em -0.4em black;
+}
+
+/* New Buttons */
+#button5 {
+  background: lightcyan;
+}
+
+#button5:active,
+#button5.lit {
+  background: cyan;
+}
+
+#button5:hover {
+  transform: translateY(-0.25em);
+  box-shadow: 0 0.5em 0.5em -0.4em black;
+}
+
+#button6 {
+  background: lightgrey;
+}
+
+#button6:active,
+#button6.lit {
+  background: grey;
+}
+
+#button6:hover {
+  transform: translateY(-0.25em);
+  box-shadow: 0 0.5em 0.5em -0.4em black;
+}
+
+#button7 {
+  background: lightpink;
+}
+
+#button7:active,
+#button7.lit {
+  background: pink;
+}
+
+#button7:hover {
+  transform: translateY(-0.25em);
+  box-shadow: 0 0.5em 0.5em -0.4em black;
+}
+
+#button8 {
+  background: lightsalmon;
+}
+
+#button8:active,
+#button8.lit {
+  background: salmon;
+}
+
+#button8:hover {
   transform: translateY(-0.25em);
   box-shadow: 0 0.5em 0.5em -0.4em black;
 }

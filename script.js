@@ -5,7 +5,7 @@ const nextClueWaitTime = 1000; //how long to wait before starting playback of th
 
 //Global Variables
 //keep track of the secret pattern of button pressed
-var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+var pattern = [2, 2, 4, 3, 6, 8, 5];
 
 
 //how far the player is guessing the pattern
@@ -50,7 +50,11 @@ const freqMap = {
     1: 261.6,
     2: 329.6,
     3: 392,
-    4: 466.2
+    4: 466.2,
+    5: 300,
+    6: 380.9,
+    7: 410.4,
+    8: 290,
 };
 
 /**
