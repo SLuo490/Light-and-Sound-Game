@@ -1,11 +1,13 @@
 // global constants
-const clueHoldTime = 1000; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 //Global Variables
 //keep track of the secret pattern of button pressed
 var pattern = [2, 2, 4, 3, 6, 8, 5];
+//how long to hold each clue's light/sound
+var clueHoldTime = 1000;
+
 
 
 //how far the player is guessing the pattern
@@ -133,8 +135,9 @@ function playClueSequence() {
         // for each clue that is revealed so far
         console.log("play single clue: " + pattern[i] + " in " + delay + "ms");
         setTimeout(playSingleClue, delay, pattern[i]); // set a timeout to play that clue
-        delay += clueHoldTime;
+        delay += clueHoldTime; //decrease clueholdtime each turn
         delay += cluePauseTime;
+        clueHoldTime -= 25;
     }
 }
 
