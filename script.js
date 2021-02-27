@@ -8,8 +8,6 @@ var pattern = [2, 2, 4, 3, 6, 8, 5];
 //how long to hold each clue's light/sound
 var clueHoldTime = 1000;
 
-
-
 //how far the player is guessing the pattern
 var progress = 0;
 //keep track of wheter the game is active
@@ -26,6 +24,8 @@ function startGame() {
     //initialize game variables
     progress = 0;
     gamePlaying = true;
+
+    randomPattern(pattern);
 
     // swap the Start and Stop buttons when game start
     document.getElementById("startBtn").classList.add("hidden");
@@ -56,7 +56,7 @@ const freqMap = {
     5: 300,
     6: 380.9,
     7: 410.4,
-    8: 290,
+    8: 290
 };
 
 /**
@@ -173,4 +173,23 @@ function guess(btn) {
     } else {
         loseGame();
     }
+}
+
+function randomPattern(array) {
+    var currentIndex = array.length;
+    var temp;
+    var randomIndex;
+
+    // While there remain elements to randomize
+    for (var i = 0; i < currentIndex; i++) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temp = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temp;
+    }
+
+    return array;
 }
