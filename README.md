@@ -28,5 +28,5 @@ Name: Shi Tao Luo
 	Some other features that I would love to include would be a difficulty bar. Where the user can choose between three difficulties- easy, medium, and hard. If it is easy, then there would be fewer buttons, patterns and the speed of the game would be slower. Whereas the difficulty was hard, it would have more buttons, patterns and the speed of the game would be faster. And medium somewhere in between. I would also love to implement a statistic page where it would record the user’s game statistics, like the number of games the user won and lost in each difficulty. 
 
 
-<img src="http://g.recordit.co/O43NdkrtKH.gif" width=500><br>
+<img src="http://g.recordit.co/aYCN9crtfn.gif" width=500><br>
 
